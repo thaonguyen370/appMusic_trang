@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="vang">#f7ef08</color>
+    <color name="xanh">#0a0eda</color>
+    <color name="mau_do">#f50206</color>
+    <color name="xanh_la_troi">#220ce6</color>
+    <color name="den">#1a1818</color>
+    <color name="trang">#fbfbfcfb</color>
+    <color name="cam_f0c759">#f0c759</color>
+    <color name="xanh_chuoi">#c6f558</color>
+    <color name="xanh_la248a30">#248a30</color>
+    <color name="xanh_la_troi_dam">#00BFFF</color>
+    <color name="xam_nhat">#DCDCDC</color>
+</resources>

@@ -1,0 +1,7 @@
+<scale xmlns:app="http://schemas.android.com/apk/res/android"
+    app:fromXScale="5.0"
+    app:fromYScale="5.0"
+    app:toXScale="1.0"
+    app:pivotY="1.0"
+    app:duration="2000"
+    />
