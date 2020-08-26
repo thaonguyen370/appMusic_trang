@@ -38,7 +38,8 @@ public class ListAdapterBaiHat extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int i) { return null;
+    public Object getItem(int i) {
+        return null;
     }
 
     @Override
@@ -56,14 +57,9 @@ public class ListAdapterBaiHat extends BaseAdapter {
         ImageView anh = (ImageView) view.findViewById(R.id.anh);
 
         BaiHat baiHat = al.get(i);
-        tenBaiHat.setText("Song: "+baiHat.getTenBai());
-        caSi.setText("singer: "+baiHat.getCaSi());
+        tenBaiHat.setText("Song: " + baiHat.getTenBai());
+        caSi.setText("singer: " + baiHat.getCaSi());
         anh.setImageResource(baiHat.getAnh());
-        Animation animation= AnimationUtils.loadAnimation( context,R.anim.dia_xoay_am_nhac );
-        anh.startAnimation( animation );
-
-
-
         return view;
     }
 

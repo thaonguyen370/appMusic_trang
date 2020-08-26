@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -34,7 +37,7 @@ public class MusicActivity extends AppCompatActivity {
     ImageButton next;
     ListAdapterBaiHat adapter;
     MediaPlayer song;
-    int viTri=0;
+    public static int viTri=0;
     TextView tinNhan;
     TextView thoiGianDangChay, thoiGianTong;
     SeekBar seekBar;
@@ -228,6 +231,26 @@ public class MusicActivity extends AppCompatActivity {
             }
         } );
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adpterView, View view, int position,
+                                    long id) {
+
+                Animation anim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.dia_xoay_am_nhac );
+
+                for (int i = 0; i < listView.getChildCount(); i++) {
+                    if(position == i ){
+                        listView.getChildAt(i).setBackgroundColor(Color.BLUE);
+                        listView.getChildAt(i).findViewById(R.id.anh).findViewById(R.id.anh).startAnimation(anim);
+                    }else{
+                       listView.getChildAt(i).findViewById(R.id.anh).findViewById(R.id.anh).clearAnimation();
+
+                        listView.getChildAt(i).setBackgroundColor(Color.TRANSPARENT);
+                    }
+                }
+            }
+        });
     }
     private void setTime(){
         SimpleDateFormat dinhDangGio=new SimpleDateFormat( "mm:ss" );
