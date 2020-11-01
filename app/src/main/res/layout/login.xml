@@ -5,68 +5,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dang_nhap_online"
+    android:background="@drawable/n1"
     tools:context=".LoginActivity">
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="131dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="276dp"
-        android:text="Password"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="132dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="216dp"
-        android:text="Hello"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="156dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="224dp"
-        android:layout_marginEnd="52dp"
-        android:text="PhươngTrang"
-        android:textSize="25sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="149dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="276dp"
         android:ems="10"
+        android:gravity="center"
         android:inputType="textPassword"
         android:maxLength="9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/bnt_login"
         android:layout_width="141dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="132dp"
-        android:text="Đăng Nhập"
+        android:layout_marginBottom="100dp"
+        android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -74,11 +38,11 @@
         android:id="@+id/show_pass"
         android:layout_width="141dp"
         android:layout_height="16dp"
-        android:layout_marginBottom="252dp"
+        android:layout_marginBottom="236dp"
         android:text="show password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

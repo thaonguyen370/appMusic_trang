@@ -3,13 +3,12 @@ package Models;
 /**
  * Created by NguyenVanThao on 2/4/2018.
  */
-
 public class BaiHat {
     private int anh;
     private String tenBai;
     String caSi;
     private int mp3;
-
+    private String loiBaiHat;
     public BaiHat(int anh, String tenBai, String caSi, int mp3) {
         this.anh = anh;
         this.tenBai = tenBai;
@@ -49,4 +48,11 @@ public class BaiHat {
         return caSi;
     }
 
+    public String getLoiBaiHat() {
+        return loiBaiHat;
+    }
+
+    public void setLoiBaiHat(String loiBaiHat) {
+        this.loiBaiHat = loiBaiHat;
+    }
 }

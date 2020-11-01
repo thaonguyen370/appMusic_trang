@@ -1,41 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:weightSum="10"
-    android:id="@+id/manHinhDS"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg3"
     android:orientation="vertical">
+
+
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_weight="2"
+        android:background="@color/xanh"
+        android:layout_weight="7"
         android:layout_width="match_parent"
         android:layout_height="0dp">
-
-        <TextView
-
-            android:id="@+id/txt_trang"
+        <ImageView
+            android:id="@+id/imageDetail"
+            android:background="@drawable/n1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Nhe nhạc và nhớ về những kĩ niệm tuyệt vời bồ nhé"
-            android:textColor="@color/mau_do"
-            android:textSize="30sp" />
+            android:layout_height="match_parent"/>
     </LinearLayout>
-    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
     <LinearLayout
+        android:background="@color/trang"
+        android:layout_weight="0.5"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6"
-        android:orientation="vertical">
-
-        <ListView
-            android:id="@+id/list"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/songName"
+            android:textColor="@color/den"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="My love"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></ListView>
-
+            android:layout_height="match_parent"/>
     </LinearLayout>
-    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <LinearLayout
+        android:background="@color/trang"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/author"
+            android:textColor="@color/den"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:text="My love"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
     <LinearLayout
         android:background="#00000000"
         android:layout_width="match_parent"
@@ -65,7 +78,7 @@
                     android:id="@+id/thoiGianDangChay"
                     android:textColor="@color/mau_do"
                     android:layout_weight="1"
-                    android:text=" "
+                    android:text="time"
                     android:gravity="left"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -105,7 +118,7 @@
                 android:id="@+id/play"
                 android:background="@null"
                 android:layout_weight="1"
-                android:src="@drawable/ic_play_arrow_black_24dp"
+                android:src="@drawable/ic_pause_black_24dp"
                 android:layout_width="50dp"
                 android:layout_height="50dp" />
             <ImageButton
@@ -123,36 +136,5 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp" />
         </LinearLayout>
-
-
-        <!--<Button-->
-
-        <!--android:id="@+id/back"-->
-        <!--android:textSize="15sp"-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:background="@color/xanh"-->
-
-        <!--android:gravity="center"-->
-        <!--android:layout_weight="1"-->
-        <!--android:text="Back"-->
-        <!--android:textColor="@color/mau_do" />-->
-
-        <!--<Button-->
-        <!--android:layout_weight="1"-->
-
-        <!--android:id="@+id/next"-->
-        <!--android:textSize="15sp"-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:background="@color/xanh"-->
-
-        <!--android:gravity="center"-->
-        <!--android:textColor="@color/mau_do"-->
-
-        <!--android:text="Next" />-->
-
     </LinearLayout>
-
-
 </LinearLayout>
