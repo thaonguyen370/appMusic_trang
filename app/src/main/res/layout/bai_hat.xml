@@ -10,7 +10,7 @@
         android:layout_height="50dp"
 
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
+        
         android:layout_alignParentTop="true"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
@@ -24,11 +24,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/anh"
-        android:layout_marginLeft="25dp"
+        
         android:layout_marginStart="25dp"
         android:layout_marginTop="12dp"
         android:layout_toEndOf="@+id/anh"
-        android:layout_toRightOf="@+id/anh"
+        
         android:text="TextView" />
 
     <TextView
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/anh"
-        android:layout_alignLeft="@+id/tenBaiHat"
+        
         android:layout_alignStart="@+id/tenBaiHat"
         android:layout_marginBottom="11dp"
         android:text="TextView"
