@@ -1,4 +1,4 @@
-package com.example.appmusic.ui.main;
+package com.thao.appmusic.ui.main;
 
 import android.content.Context;
 
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.appmusic.R;
+import com.thao.appmusic.R;
 
 import java.util.ArrayList;
 

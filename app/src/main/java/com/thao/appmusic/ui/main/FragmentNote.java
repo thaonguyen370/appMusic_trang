@@ -1,4 +1,4 @@
-package com.example.appmusic.ui.main;
+package com.thao.appmusic.ui.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,8 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.appmusic.MusicActivity;
-import com.example.appmusic.R;
+import com.thao.appmusic.MusicActivity;
+import com.thao.appmusic.R;
 
 /**
  * A placeholder fragment containing a simple view.

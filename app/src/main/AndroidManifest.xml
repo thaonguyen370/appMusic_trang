@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.appmusic">
+    package="com.thao.appmusic">
 
     <application
         android:allowBackup="true"
@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".DetailActivity"
+            android:name="com.thao.appmusic.DetailActivity"
             android:label="@string/title_activity_main1"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".MusicActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.thao.appmusic.MusicActivity" />
+        <activity android:name="com.thao.appmusic.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

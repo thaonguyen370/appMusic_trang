@@ -1,4 +1,4 @@
-package com.example.appmusic.ui.main;
+package com.thao.appmusic.ui.main;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;

@@ -1,18 +1,13 @@
-package com.example.appmusic.ui.main;
+package com.thao.appmusic.ui.main;
 
-import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,17 +18,13 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.appmusic.LoginActivity;
-import com.example.appmusic.MusicActivity;
-import com.example.appmusic.R;
+import com.thao.appmusic.MusicActivity;
+import com.thao.appmusic.R;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
-import Adapter.ListAdapterBaiHat;
-import Models.BaiHat;
 
 /**
  * A placeholder fragment containing a simple view.

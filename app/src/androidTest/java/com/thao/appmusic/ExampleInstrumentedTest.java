@@ -1,4 +1,4 @@
-package com.example.appmusic;
+package com.thao.appmusic;
 
 import android.content.Context;
 

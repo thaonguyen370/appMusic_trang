@@ -1,15 +1,15 @@
-package com.example.appmusic;
+package com.thao.appmusic;
 
 import android.os.Bundle;
 
-import com.example.appmusic.ui.main.FragmentDetail;
-import com.example.appmusic.ui.main.FragmentNote;
+import com.thao.appmusic.ui.main.FragmentDetail;
+import com.thao.appmusic.ui.main.FragmentNote;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.appmusic.ui.main.SectionsPagerAdapter;
+import com.thao.appmusic.ui.main.SectionsPagerAdapter;
 
 public class DetailActivity extends AppCompatActivity {
 FragmentDetail fragmentDetail;

@@ -1,4 +1,4 @@
-package com.example.appmusic;
+package com.thao.appmusic;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
