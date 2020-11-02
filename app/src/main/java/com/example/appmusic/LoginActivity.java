@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     CheckBox iconShowPass;
     EditText password;
     ConstraintLayout constraintLayout;
-    private String password1 = "220620";
+    private String password1 = "221020";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
