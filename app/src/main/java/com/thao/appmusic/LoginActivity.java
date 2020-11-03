@@ -22,7 +22,6 @@ import java.util.List;
 import java.util.Random;
 
 public class LoginActivity extends AppCompatActivity {
-    Button btnLogin;
     CheckBox iconShowPass;
     EditText password;
     ConstraintLayout constraintLayout;
@@ -34,21 +33,10 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.login);
 
-
-        btnLogin = (Button) findViewById(R.id.bnt_login);
         iconShowPass = findViewById(R.id.show_pass);
         password = (EditText) findViewById(R.id.password);
         constraintLayout = findViewById(R.id.mhLogIn);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (password.getText().toString().equals(password1)) {
-                    Intent intent = new Intent(LoginActivity.this, MusicActivity.class);
-                    startActivity(intent);
-                } else
-                    Toast.makeText(LoginActivity.this, "Hãy nhập ngày mình yêu nhau nhé bồ(6 số)!", Toast.LENGTH_SHORT).show();
-            }
-        });
+
         iconShowPass.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -89,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
         }, 5000);
     }
 
-    public static void hideKeyboard(Activity activity) {
+    public void hideKeyboard(Activity activity) {
         InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
         //Find the currently focused view, so we can grab the correct window token from it.
         View view = activity.getCurrentFocus();
@@ -97,6 +85,21 @@ public class LoginActivity extends AppCompatActivity {
         if (view == null) {
             view = new View(activity);
         }
-        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        Boolean flag = imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+
+        if (flag && password.getText().toString().trim().length() == 6) {
+            if (password.getText().toString().equals(password1)) {
+                System.out.println(password.getText().toString());
+                Intent intent = new Intent(LoginActivity.this, MusicActivity.class);
+                startActivity(intent);
+            } else {
+                Toast.makeText(LoginActivity.this, "Hãy nhập ngày mình yêu nhau nhé bồ(6 số)!", Toast.LENGTH_SHORT).show();
+            }
+        }
+        if (!flag) {
+            password.setText("");
+        }
+
+
     }
 }

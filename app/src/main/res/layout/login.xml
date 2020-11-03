@@ -15,6 +15,7 @@
         android:layout_marginTop="52dp"
         android:ems="10"
         android:gravity="center"
+        android:textColor="@color/mau_hong"
         android:inputType="textPassword"
         android:maxLength="9"
         app:layout_constraintBottom_toTopOf="@+id/show_pass"
@@ -23,17 +24,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.954"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/bnt_login"
-        android:layout_width="141dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="100dp"
-        android:text="Login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <CheckBox
