@@ -20,7 +20,7 @@
 
         android:id="@+id/tenBaiHat"
         android:textSize="10sp"
-        android:textColor="@color/den"
+        android:textColor="@color/vang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/anh"
@@ -40,7 +40,7 @@
         android:layout_alignStart="@+id/tenBaiHat"
         android:layout_marginBottom="11dp"
         android:text="TextView"
-        android:textColor="@color/den"
+        android:textColor="@color/vang"
         android:textSize="10sp" />
 
 

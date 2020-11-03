@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Nhe nhạc và nhớ về những kĩ niệm tuyệt vời bồ nhé"
-            android:textColor="@color/mau_do"
+            android:textColor="@color/mau_hong"
             android:textSize="30sp" />
     </LinearLayout>
     <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
@@ -63,7 +63,7 @@
                 android:layout_height="0dp">
                 <TextView
                     android:id="@+id/thoiGianDangChay"
-                    android:textColor="@color/mau_do"
+                    android:textColor="@color/mau_hong"
                     android:layout_weight="1"
                     android:text=" "
                     android:gravity="left"
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content" />
                 <TextView
                     android:id="@+id/thoiGianTong"
-                    android:textColor="@color/mau_do"
+                    android:textColor="@color/mau_hong"
                     android:layout_weight="1"
                     android:text=""
                     android:gravity="right"

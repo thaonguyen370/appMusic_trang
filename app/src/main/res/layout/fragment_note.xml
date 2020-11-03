@@ -9,13 +9,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <LinearLayout
-        android:background="@color/trang"
         android:layout_weight="0.5"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <TextView
             android:id="@+id/songName"
-            android:textColor="@color/den"
+            android:textColor="@color/vang"
             android:textStyle="bold"
             android:gravity="center"
             android:text="My love"
@@ -23,22 +22,31 @@
             android:layout_height="match_parent"/>
     </LinearLayout>
     <LinearLayout
-        android:background="@color/trang"
         android:layout_weight="0.5"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <TextView
             android:id="@+id/author"
-            android:textColor="@color/den"
+            android:textColor="@color/vang"
             android:textStyle="italic"
             android:gravity="center"
             android:text="My love"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </LinearLayout>
-    <TextView
-        android:layout_gravity="center"
-        android:text="dang cap nhat loi"
+    <LinearLayout
+        android:layout_weight="9"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="0dp">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/description"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/mau_hong"
+            android:text="dang cap nhat loi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
 </LinearLayout>

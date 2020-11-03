@@ -12,15 +12,17 @@
         android:id="@+id/password"
         android:layout_width="149dp"
         android:layout_height="57dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPassword"
         android:maxLength="9"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/show_pass"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.626"
+        app:layout_constraintVertical_bias="0.954"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -38,11 +40,12 @@
         android:id="@+id/show_pass"
         android:layout_width="141dp"
         android:layout_height="16dp"
-        android:layout_marginBottom="236dp"
+        android:layout_marginBottom="208dp"
         android:text="show password"
+        android:textColor="@color/mau_hong"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

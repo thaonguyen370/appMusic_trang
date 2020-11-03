@@ -28,6 +28,7 @@ public class FragmentNote extends Fragment {
     TextView nameSong;
     TextView author;
 
+    TextView description;
     public static FragmentNote newInstance(int index) {
         FragmentNote fragment = new FragmentNote();
         Bundle bundle = new Bundle();
@@ -63,9 +64,11 @@ public class FragmentNote extends Fragment {
 
         nameSong = (TextView) root.findViewById(R.id.songName);
         author = (TextView) root.findViewById(R.id.author);
+        description=(TextView) root.findViewById(R.id.description);
 
         nameSong.setText(MusicActivity.songName);
         author.setText(MusicActivity.author);
+        description.setText(MusicActivity.al.get(MusicActivity.viTri).getLoiBaiHat());
 
         return root;
     }
